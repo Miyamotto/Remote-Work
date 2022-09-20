@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navigation">
+        <nav>
+          <ul id="dropMenu">
+            <li>
+              <img src="images/logo.svg" alt="" />
+            </li>
+            <div id="deviceDisplay">
+                <div id="mobDisplay">
+                    <li>
+                      <div id="featuresFlex">
+                        <a id="features" onclick="myFunction()" href="#">Features</a>
+                        <img id="shown" src="images/icon-arrow-down.svg" alt="" />
+                        <img id="hidden" src="images/icon-arrow-up.svg" alt="" />
+                      </div>
+      
+                      <ul id="featuresMenu">
+                        <li>
+                          <img src="images/icon-todo.svg" alt="" />
+                          <a href="#">Todo List</a>
+                        </li>
+                        <li>
+                          <img src="images/icon-calendar.svg" alt="" />
+                          <a href="#">Calendar</a>
+                        </li>
+                        <li>
+                          <img src="images/icon-reminders.svg" alt="" />
+                          <a href="#">Reminder</a>
+                        </li>
+                        <li>
+                          <img src="images/icon-planning.svg" alt="" />
+                          <a href="#">Planning</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div id="companyFlex">
+                        <a href="#" onclick="myFunctionOne() ">Company</a>
+                        <img id="shownOne" src="images/icon-arrow-down.svg" alt="" />
+                        <img id="hiddenOne" src="images/icon-arrow-up.svg" alt="" />
+                      </div>
+      
+                      <ul id="companyMenu">
+                        <li>
+                          <a href="#">History</a>
+                        </li>
+                        <li>
+                          <a href="#">Our Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Blog</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <div class="last">
+                      <li>
+                        <a href="#">Careers</a>
+                      </li>
+                      <li>
+                        <a href="#">About</a>
+                      </li>
+                    </div>
+                    <div class="buttons">
+                        <li>
+                            <button id="login">Login</button>
+                        </li>
+                     <li>
+                        <button id="register">Register</button>
+                     </li>   
+                        
+                    </div>
+                </div>
+                </ul>
+               
+                <img id="hamburgerShow" src="images/icon-menu.svg" alt="" />
+                <img id="hamburgerHide" src="images/icon-close-menu.svg" alt="" />
+            </div>
+            
+          
+        </nav>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
