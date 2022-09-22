@@ -16,84 +16,74 @@
   <body>
     <div class="wrapper">
       <div class="navigation">
-        <nav>
-          <ul id="dropMenu">
-            <li>
-              <img src="images/logo.svg" alt="" />
-            </li>
-            <div id="deviceDisplay">
-                <div id="mobDisplay">
-                    <li>
-                      <div id="featuresFlex">
-                        <a id="features" onclick="myFunction()" href="#">Features</a>
-                        <img id="shown" src="images/icon-arrow-down.svg" alt="" />
-                        <img id="hidden" src="images/icon-arrow-up.svg" alt="" />
-                      </div>
-      
-                      <ul id="featuresMenu">
-                        <li>
-                          <img src="images/icon-todo.svg" alt="" />
-                          <a href="#">Todo List</a>
-                        </li>
-                        <li>
-                          <img src="images/icon-calendar.svg" alt="" />
-                          <a href="#">Calendar</a>
-                        </li>
-                        <li>
-                          <img src="images/icon-reminders.svg" alt="" />
-                          <a href="#">Reminder</a>
-                        </li>
-                        <li>
-                          <img src="images/icon-planning.svg" alt="" />
-                          <a href="#">Planning</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <div id="companyFlex">
-                        <a href="#" onclick="myFunctionOne() ">Company</a>
-                        <img id="shownOne" src="images/icon-arrow-down.svg" alt="" />
-                        <img id="hiddenOne" src="images/icon-arrow-up.svg" alt="" />
-                      </div>
-      
-                      <ul id="companyMenu">
-                        <li>
-                          <a href="#">History</a>
-                        </li>
-                        <li>
-                          <a href="#">Our Team</a>
-                        </li>
-                        <li>
-                          <a href="#">Blog</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <div class="last">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <nav id="showNav">
+          <div class="navItems">
+            <div class="navText">
+              <ul id="navList">
+                <div class="features">
+                  <li>
+                    <a href="#" id="featuresOne">Features</a>
+                    <img id="upArrow" src="images/icon-arrow-up.svg" alt="" />
+                    <img
+                      id="downArrow"
+                      src="images/icon-arrow-down.svg"
+                      alt=""
+                    />
+                    <ul id="featuresHidden">
                       <li>
-                        <a href="#">Careers</a>
+                        <img src="images/icon-todo.svg" alt="" />
+                        <a href="#">Todo List</a>
                       </li>
                       <li>
-                        <a href="#">About</a>
+                        <img src="images/icon-calendar.svg" alt="" />
+                        <a href="#">Calendar</a>
                       </li>
-                    </div>
-                    <div class="buttons">
-                        <li>
-                            <button id="login">Login</button>
-                        </li>
-                     <li>
-                        <button id="register">Register</button>
-                     </li>   
-                        
-                    </div>
+                      <li>
+                        <img src="images/icon-reminders.svg" alt="" />
+                        <a href="#">Reminders</a>
+                      </li>
+                      <li>
+                        <img src="images/icon-planning.svg" alt="" />
+                        <a href="#">Planning</a>
+                      </li>
+                    </ul>
+                  </li>
                 </div>
-                </ul>
-               
-                <img id="hamburgerShow" src="images/icon-menu.svg" alt="" />
-                <img id="hamburgerHide" src="images/icon-close-menu.svg" alt="" />
+                <div class="company">
+                  <li>
+                    <a href="#" id="companyOne">Company</a>
+                    <img id="upArrow1" src="images/icon-arrow-up.svg" alt="" />
+                    <img
+                      id="downArrow1"
+                      src="images/icon-arrow-down.svg"
+                      alt=""
+                    />
+                    <ul id="companyHidden">
+                      <li><a href="#">History </a></li>
+                      <li><a href="#">Our Team </a></li>
+                      <li><a href="#">Blog </a></li>
+                    </ul>
+                  </li>
+                </div>
+                <div class="last">
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">About</a></li>
+                </div>
+              </ul>
             </div>
-            
-          
+          </div>
+          <div class="navButtons">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+          </div>
         </nav>
+        <div class="hamburger">
+          <img id="open" src="images/icon-menu.svg" alt="" />
+          <img id="close" src="images/icon-close-menu.svg" alt="" />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
