@@ -10,6 +10,9 @@
 .wrapper {
   padding: 2rem;
 }
+#wrapper {
+  height: 100vh;
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -155,8 +158,15 @@ nav a:hover {
 }
 @media screen and (max-width: 790px) {
   #showNav {
-    display: none;
-    position: relative;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    overflow-x: hidden;
+    transition: 0.5s;
   }
   #open {
     display: flex;
@@ -171,9 +181,8 @@ nav a:hover {
   }
   #close.show {
     display: flex;
-  }
-
-  #showNav.show {
+    position: static;
+    z-index: 100;
   }
 
   #navList {
@@ -185,17 +194,19 @@ nav a:hover {
   }
   #featuresHidden {
     position: relative;
+    margin-left: 0;
   }
   #showNav.show {
-    position: absolute;
     display: flex;
-    top: 8rem;
+
     flex-direction: column;
-    height: 22rem;
-    width: auto;
-    text-align: center;
+    align-items: flex-start;
+    width: 15rem;
+    padding: 2rem;
+    justify-content: center;
     transition: 0.3s;
-    outline: 1px solid red;
+
+    background-color: white;
   }
   #navList.show {
     display: flex;
@@ -203,6 +214,7 @@ nav a:hover {
     align-items: flex-start;
     margin-left: auto;
   }
+
   .last {
     display: flex;
     flex-direction: column;
@@ -210,5 +222,17 @@ nav a:hover {
   .navButtons {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrapper.show {
+    background: rgba(129, 127, 127, 0.9);
+  }
+  #register {
+    width: 12rem;
+  }
+  #featuresOne {
+    position: relative;
   }
 }
