@@ -7,162 +7,208 @@
   text-decoration: none;
   color: gray;
 }
-
-.navigation {
+.wrapper {
   padding: 2rem;
 }
-#dropMenu {
+.navigation {
   display: flex;
-  gap: 4rem;
-  text-align: center;
   align-items: center;
-}
-#featuresMenu {
-  position: absolute;
-}
-#companyMenu {
-  position: absolute;
+  justify-content: space-between;
+  gap: 2rem;
 }
 nav {
   display: flex;
-  text-align: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
-#dropMenu li a {
+nav a {
   transition: 0.5s;
 }
-#dropMenu li a:hover {
+nav a:hover {
   color: black;
   transition: 0.5s;
 }
-#hidden {
-  display: none;
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
-#hiddenOne {
+.logo {
+  cursor: pointer;
+}
+#navList {
+  display: flex;
+  gap: 3rem;
+}
+#featuresHidden {
+  padding-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  width: 10rem;
+  height: 9rem;
+  position: absolute;
+  margin-left: -3rem;
   display: none;
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+#featureImg {
+  display: flex;
+  flex-direction: column;
+}
+#featureText {
+  display: flex;
+  flex-direction: column;
+}
+.features ul li {
+  padding-top: 0.5rem;
 }
 .last {
   display: flex;
-  gap: 4rem;
-}
-#featuresMenu {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-  align-items: flex-start;
-  text-align: center;
-  display: none;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  height: 10rem;
-  width: 10rem;
-  margin-left: -5rem;
-  border-radius: 5px;
-}
-#featuresMenu li {
-  display: flex;
-  gap: 1rem;
-}
-#featuresFlex {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-#companyMenu {
-  display: flex;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  gap: 1rem;
-  margin-top: 1rem;
-  align-items: flex-start;
-  text-align: center;
-  display: none;
-  height: 7rem;
-  width: 7rem;
-  padding: 1rem;
-  border-radius: 5px;
-}
-#companyFlex {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-#companyMenu li {
-  display: flex;
-  gap: 1rem;
-}
-.buttons {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 2rem;
-}
-#login {
-  background-color: transparent;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.5s;
-  font-weight: bold;
-}
-#login:hover {
-  transition: 0.5s;
-  color: black;
-}
-#mobDisplay {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
-#register {
-  background-color: transparent;
-  height: 2.5rem;
+#companyHidden {
+  padding-top: 1rem;
   width: 6rem;
-  border-radius: 15px;
+  height: 7rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  position: absolute;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  display: none;
+}
+#featuresHidden li a {
+  padding-left: 0.4rem;
+}
+
+#companyHidden li {
+  padding-top: 0.5rem;
+}
+#upArrow {
+  display: none;
+}
+#upArrow1 {
+  display: none;
+}
+.navButtons {
+  display: flex;
+  gap: 3rem;
+}
+#login {
+  border: none;
+  background-color: transparent;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
+}
+#login:hover {
+  color: black;
+  transition: 0.5;
+}
+#register {
+  background-color: transparent;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 25px;
+  font-size: 1rem;
   font-weight: bold;
   border-color: gray;
+  transition: 0.5s;
 }
 #register:hover {
-  transition: 0.5s;
   color: black;
   border-color: black;
 }
-
-#hamburgerShow {
+#featuresHidden.show {
+  display: block;
+}
+#downArrow.show {
   display: none;
 }
-#hamburgerHide {
+#upArrow.show {
+  display: inline;
+}
+#companyHidden.show {
+  display: block;
+}
+#downArrow1.show {
   display: none;
 }
-#featuresMenu.show {
-  display: flex;
+#upArrow1.show {
+  display: inline;
 }
-#shown.show {
+.hamburger {
+  display: flex;
+  align-items: center;
+}
+#open {
   display: none;
 }
-#hidden.show {
-  display: flex;
-}
-#companyMenu.show {
-  display: flex;
-}
-#shownOne.show {
+#close {
   display: none;
 }
-#hiddenOne.show {
-  display: flex;
-}
-@media screen and (max-width: 850px) {
-  #deviceDisplay {
+@media screen and (max-width: 790px) {
+  #showNav {
+    display: none;
+    position: relative;
+  }
+  #open {
+    display: flex;
+    cursor: pointer;
+  }
+  #close {
+    display: none;
+    cursor: pointer;
+  }
+  #open.show {
     display: none;
   }
-  #hamburgerShow {
+  #close.show {
     display: flex;
+  }
+
+  #showNav.show {
+  }
+
+  #navList {
+    display: flex;
+    flex-direction: column;
+  }
+  #companyHidden {
+    position: relative;
+  }
+  #featuresHidden {
+    position: relative;
+  }
+  #showNav.show {
+    position: absolute;
+    display: flex;
+    top: 8rem;
+    flex-direction: column;
+    height: 22rem;
+    width: auto;
+    text-align: center;
+    transition: 0.3s;
+    outline: 1px solid red;
+  }
+  #navList.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  .last {
+    display: flex;
+    flex-direction: column;
+  }
+  .navButtons {
+    display: flex;
+    flex-direction: column;
   }
 }
