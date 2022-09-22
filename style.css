@@ -255,6 +255,7 @@ nav a:hover {
 
   .last {
     position: relative;
+    gap: 1rem;
   }
   #login {
     font-size: 0.6rem;
