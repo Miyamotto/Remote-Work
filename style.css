@@ -164,9 +164,11 @@ nav a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-
-   
+    font-size: 0.6rem;
     transition: 0.5s;
+  }
+  #showNav div {
+    margin-top: -2rem;
   }
   #open {
     display: flex;
@@ -191,10 +193,27 @@ nav a:hover {
   }
   #companyHidden {
     position: relative;
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    margin: 0;
+  }
+  #companyOne {
+    position: relative;
   }
   #featuresHidden {
     position: relative;
     margin-left: 0;
+    height: 7rem;
+    padding: 0;
+    width: 6rem;
+    margin: 0;
+  }
+  .features {
+    position: relative;
+  }
+  .company {
+    position: relative;
   }
   #showNav.show {
     display: flex;
@@ -222,8 +241,9 @@ nav a:hover {
   .navButtons {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 4rem;
     align-items: center;
+
     justify-content: center;
   }
   #wrapper.show {
@@ -232,7 +252,15 @@ nav a:hover {
   #register {
     width: 12rem;
   }
-  #featuresOne {
+
+  .last {
     position: relative;
+  }
+  #login {
+    font-size: 0.6rem;
+  }
+  #register {
+    font-size: 0.6rem;
+    margin-top: -2rem;
   }
 }
