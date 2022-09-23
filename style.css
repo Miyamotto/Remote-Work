@@ -7,8 +7,14 @@
   text-decoration: none;
   color: gray;
 }
+body {
+  background-color: rgb(205, 191, 191);
+}
+
 .wrapper {
   padding: 2rem;
+  height: 100vh;
+  width: 100%;
 }
 #wrapper {
   height: 100vh;
@@ -97,8 +103,9 @@ nav a:hover {
 #upArrow1 {
   display: none;
 }
-.navButtons {
+#navButtons {
   display: flex;
+
   gap: 3rem;
 }
 #login {
@@ -156,18 +163,72 @@ nav a:hover {
 #close {
   display: none;
 }
+.heroSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 9rem;
+  align-self: center;
+  gap: 5rem;
+}
+.heroImg {
+  background-image: url(images/image-hero-desktop.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 25rem;
+}
+.comp {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.mainText h1 {
+  font-size: 3rem;
+  color: black;
+}
+.mainText p {
+  padding-top: 5rem;
+  font-size: 1.5rem;
+}
+#lastBtn {
+  margin-top: 5rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 9rem;
+  border-radius: 20rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#lastBtn:hover {
+  transition: 0.5s;
+  color: gray;
+}
 @media screen and (max-width: 808px) {
   #showNav {
-    height: 100vh;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
-    overflow-x: hidden;
+
     transition: 0.5s;
-    padding-top: 60px;
   }
 
   #open {
@@ -206,21 +267,24 @@ nav a:hover {
     width: 9rem;
     margin-top: 0;
   }
-
+  .mainText {
+    padding: 0;
+  }
+  .heroSection {
+    padding: 0;
+  }
   #showNav.show {
     display: flex;
     flex-direction: column;
     background-color: white;
-    display: flex;
-    transition: 0.5s;
 
-    height: 100vh;
-    width: 70%;
-    background-color: white;
+    display: flex;
+    height: 100%;
+    width: 50%;
+
     align-items: flex-start;
     padding-left: 1rem;
     position: absolute;
-    overflow: hidden;
   }
   #navList.show {
     padding-top: 5rem;
@@ -235,7 +299,7 @@ nav a:hover {
     flex-direction: column;
     position: relative;
   }
-  .navButtons {
+  #navButtons.show {
     display: flex;
     flex-direction: column;
     padding-bottom: 10rem;
@@ -248,8 +312,23 @@ nav a:hover {
   }
   #wrapper.show {
     background: rgba(43, 43, 43, 0.9);
+    height: 100%;
+    width: 100%;
   }
   #register {
     width: 12rem;
+  }
+  .heroSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .heroImg {
+    width: 100%;
+  }
+  .heroSection div:nth-of-type(2) {
+    order: 1;
+  }
+  .heroSection div:nth-of-type(1) {
+    order: 2;
   }
 }
