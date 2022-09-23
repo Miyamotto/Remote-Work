@@ -3,6 +3,7 @@ function openMenu() {
   document.getElementById("featuresHidden").classList.toggle("show");
   document.getElementById("downArrow").classList.toggle("show");
   document.getElementById("upArrow").classList.toggle("show");
+  document.getElementById("company").classList.toggle("active");
 }
 document.getElementById("companyOne").addEventListener("click", openMenuOne);
 function openMenuOne() {
@@ -16,7 +17,7 @@ function openMenuTwo() {
   document.getElementById("open").classList.toggle("show");
   document.getElementById("close").classList.toggle("show");
   document.getElementById("showNav").classList.toggle("show");
-  document.getElementById("navItems").classList.toggle("show");
+  document.getElementById("wrapper").classList.toggle("show");
   document.getElementById("navList").classList.toggle("show");
 }
 document.getElementById("close").addEventListener("click", openMenuthree);
@@ -24,6 +25,6 @@ function openMenuthree() {
   document.getElementById("open").classList.toggle("show");
   document.getElementById("close").classList.toggle("show");
   document.getElementById("showNav").classList.toggle("show");
-  document.getElementById("navItems").classList.toggle("show");
+  document.getElementById("wrapper").classList.toggle("show");
   document.getElementById("navList").classList.toggle("show");
 }
