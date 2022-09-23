@@ -158,7 +158,7 @@ nav a:hover {
 }
 @media screen and (max-width: 808px) {
   #showNav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -214,7 +214,7 @@ nav a:hover {
     display: flex;
     transition: 0.5s;
 
-    height: 100%;
+    height: 100vh;
     width: 70%;
     background-color: white;
     align-items: flex-start;
