@@ -156,7 +156,7 @@ nav a:hover {
 #close {
   display: none;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 808px) {
   #showNav {
     height: 100%;
     width: 0;
@@ -164,12 +164,12 @@ nav a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    font-size: 0.6rem;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
     transition: 0.5s;
+    padding-top: 60px;
   }
-  #showNav div {
-    margin-top: -2rem;
-  }
+
   #open {
     display: flex;
     cursor: pointer;
@@ -192,76 +192,64 @@ nav a:hover {
     flex-direction: column;
   }
   #companyHidden {
-    position: relative;
-    height: 4rem;
-    width: 4rem;
-    padding: 0;
-    margin: 0;
-  }
-  #companyOne {
-    position: relative;
-  }
-  #featuresHidden {
-    position: relative;
-    margin-left: 0;
     height: 7rem;
-    padding: 0;
     width: 6rem;
-    margin: 0;
-  }
-  .features {
     position: relative;
+    margin-left: 1rem;
+    margin-top: 0;
   }
-  .company {
+
+  #featuresHidden {
+    margin-left: 1rem;
+    height: 9rem;
     position: relative;
+    width: 9rem;
+    margin-top: 0;
   }
+
   #showNav.show {
     display: flex;
-
     flex-direction: column;
-    align-items: flex-start;
-    width: 15rem;
-    padding: 2rem;
-    justify-content: center;
-    transition: 0.3s;
-
     background-color: white;
+    display: flex;
+    transition: 0.5s;
+
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    align-items: flex-start;
+    padding-left: 1rem;
+    position: absolute;
+    overflow: hidden;
   }
   #navList.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: auto;
+    padding-top: 5rem;
+    margin: 0;
+
+    position: relative;
+    margin-top: 0;
   }
 
   .last {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .navButtons {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-bottom: 10rem;
     align-items: center;
-
+    position: relative;
     justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   #wrapper.show {
-    background: rgba(129, 127, 127, 0.9);
+    background: rgba(43, 43, 43, 0.9);
   }
   #register {
     width: 12rem;
-  }
-
-  .last {
-    position: relative;
-    gap: 1rem;
-  }
-  #login {
-    font-size: 0.6rem;
-  }
-  #register {
-    font-size: 0.6rem;
-    margin-top: -2rem;
   }
 }
