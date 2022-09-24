@@ -300,11 +300,8 @@ nav a:hover {
     position: relative;
   }
   #navButtons.show {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    justify-content: center;
+    display: grid;
+    align-self: center;
    
     
     width: 100%;
