@@ -7,9 +7,6 @@
   text-decoration: none;
   color: gray;
 }
-body {
-  background-color: rgb(205, 191, 191);
-}
 
 .wrapper {
   padding: 2rem;
@@ -162,24 +159,22 @@ nav a:hover {
 .heroSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-  width: 100%;
+
   padding-left: 3rem;
   padding-right: 3rem;
-  margin-top: 9rem;
+  margin-top: 12em;
   align-self: center;
-  gap: 5rem;
+  gap: 9rem;
 }
-.heroImg {
-  background-image: url(images/image-hero-desktop.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 25rem;
-  width: 25rem;
+
+.heroImg img {
+  max-width: 100%;
+  min-height: 100%;
 }
 .comp {
-  padding-top: 5rem;
+  padding-top: 3rem;
+
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -188,20 +183,20 @@ nav a:hover {
 .mainText {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
 }
+
 .mainText h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: black;
 }
 .mainText p {
-  padding-top: 5rem;
+  padding-top: 2rem;
   font-size: 1.5rem;
 }
+
 #lastBtn {
-  margin-top: 5rem;
-  height: 2rem;
+  margin-top: 3rem;
+  height: 3rem;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -212,7 +207,11 @@ nav a:hover {
 }
 #lastBtn:hover {
   transition: 0.5s;
-  color: gray;
+  background-color: white;
+  color: black;
+}
+#mob {
+  display: none;
 }
 @media screen and (max-width: 808px) {
   #showNav {
@@ -273,9 +272,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     background-color: white;
-
+    border-radius: 20px;
     display: flex;
-    height: 78rem;
+    height: 100%;
     width: 50%;
     overflow: hidden;
     align-items: flex-start;
@@ -291,6 +290,8 @@ nav a:hover {
   }
   .comp {
     gap: 1rem;
+
+    justify-content: center;
   }
 
   .last {
@@ -317,20 +318,22 @@ nav a:hover {
   #register {
     width: 12rem;
   }
-  #lastBtn {
-    align-self: center;
+  .gridText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #desk {
+    display: none;
+  }
+  #mob {
+    display: flex;
   }
   .heroSection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
-  .heroImg {
-    width: 100%;
-  }
-  .heroSection div:nth-of-type(2) {
-    order: 1;
-  }
-  .heroSection div:nth-of-type(1) {
-    order: 2;
+    align-self: center;
   }
 }
