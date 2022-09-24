@@ -302,7 +302,6 @@ nav a:hover {
   #navButtons.show {
     display: flex;
     flex-direction: column;
-    padding-bottom: 50rem;
     align-items: center;
     position: relative;
     justify-content: center;
